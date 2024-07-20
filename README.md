@@ -1,31 +1,73 @@
-# React & Tailwind CSS Starter Pack
 
-This is a starter pack for creating React projects with Tailwind CSS configured. It uses React version **18.2** and Tailwind CSS version **3.2**.
+# ContentCraft AI :Content Generator
 
-## Usage
+ContentCraft AI is a MERN stack application that integrates Gemini AI for advanced content generation. This project includes features for API request tracking and subscription plans, and utilizes TanStack Query, Yup for  validation.
 
-This starter pack includes a basic setup for using **Tailwind CSS with React**. To start building your own components and styles, follow these steps:
+## Features
 
-1. Clone the repository to your local machine.
-    ```sh
-    git clone https://github.com/thepranaygupta/react-tailwind-css-starter-pack.git
-    ```
+- **AI-Powered Content Generation**: Leverage Gemini AI to create high-quality, context-aware content.
+- **API Request Count**: Monitor and manage API request usage.
+- **Subscription Plans**: Manage user access with tiered subscription plans.
+- **Interactive UI**: Responsive and modern interface built with React.js and Tailwind CSS.
+- **Data Fetching and Caching**: Use TanStack Query for efficient data management.
+- **Form Validation**: Employ Yup for robust form validation.
 
-1. Install the required packages.
-    ```sh
-    cd react-tailwind-css-starter-pack
-    npm install
-    ```
+## Tech Stack
 
-1. Start the development server.
-    ```sh
-    npm start
-    ```
-1. Open the project in your browser at [`http://localhost:3000`](http://localhost:3000) to view your project.
-1. Create your React components and add your styles using Tailwind classes. You can also create new CSS files and import them into your components.
+- **Frontend**: React.js, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **AI Integration**: Gemini AI
+- **Data Fetching**: TanStack Query
+- **Form Validation**: Yup
 
-The project is set up to use `postcss-cli` to process your CSS files. You can add your own `tailwind.config.js` file to customize your Tailwind setup.
+
+
+## Getting Started
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/contentcraft-ai.git
+   cd contentcraft-ai
+   ```
+
+2. **Install Dependencies**
+   - For the backend:
+     ```bash
+     cd backend
+     npm install
+     ```
+   - For the frontend:
+     ```bash
+     cd ../frontend
+     npm install
+     ```
+
+3. **Setup Environment Variables**
+   - Create a `.env` file in the `backend` and `frontend` directories with the required configuration details.
+
+4. **Run the Application**
+   - Start the backend server:
+     ```bash
+     cd backend
+     npm start
+     ```
+   - Start the frontend development server:
+     ```bash
+     cd ../srf
+     npm start
+     ```
+
+5. **Access the App**
+   - Open your browser and navigate to `http://localhost:3000` to use the application.
 
 ## Contributing
 
-Contributions are welcome! If you have any suggestions or find any issues, please feel free to open an issue or a pull request.
+Contributions are welcome! Please refer to our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.
+
+![image](https://github.com/user-attachments/assets/ac9202f0-21b8-4a5b-baf4-ed8ecb233950)
+
+![image](https://github.com/user-attachments/assets/b62b7a5c-bf66-425e-a514-2139f3afb43e)
+![image](https://github.com/user-attachments/assets/3930f066-e91d-482b-b4c8-9a9d0597fab0)
+
+
