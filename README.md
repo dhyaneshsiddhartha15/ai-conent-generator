@@ -1,7 +1,7 @@
 
-# ContentCraft AI :Content Generator
+# ContentGenAI AI :Content Generator
 
-ContentCraft AI is a MERN stack application that integrates Gemini AI for advanced content generation. This project includes features for API request tracking and subscription plans, and utilizes TanStack Query, Yup for  validation.
+ContentGenAI AI is a MERN stack application that integrates Gemini AI for advanced content generation. This project includes features for API request tracking and subscription plans, and utilizes TanStack Query, Yup for  validation.
 
 ## Features
 
@@ -27,8 +27,8 @@ ContentCraft AI is a MERN stack application that integrates Gemini AI for advanc
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/contentcraft-ai.git
-   cd contentcraft-ai
+   git clone https://github.com/yourusername/ContentGenAI-ai.git
+   cd ContentGenAI-ai
    ```
 
 2. **Install Dependencies**

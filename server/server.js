@@ -12,7 +12,7 @@ const User = require('./models/User');
 const cors = require("cors");
 const PORT = process.env.PORT || 5000;
 app.use(cors({
-    origin:"http://localhost:3000",
+    origin:"https://contentgentai.vercel.app",
     credentials: true,
 }));
 cron.schedule('0  0 *  * * *',async ()=>{
