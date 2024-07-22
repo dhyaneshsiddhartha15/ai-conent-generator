@@ -12,6 +12,10 @@ import GenerateContent from "./Components/ContentGeneration/GenerateContent";
 import ContentGenerationHistory from "./Components/Users/ContentGeneration/ContentGenerationHistory";
 import HomeFeatures from "./Components/Home/HomeFeatures";
 import AboutUs from "./Components/About/AboutUs";
+import Plans from "./Components/Plans/Plan";
+import FreePlanSignup from "./Components/StripePayment/FreePlanSignup";
+import CheckoutForm from "./Components/StripePayment/CheckoutForm";
+import PaymentSuccess from "./Components/StripePayment/PaymentSuccess";
 const App = () => {
 const {isAuthenticated}=useAuth();
   return (
@@ -20,11 +24,13 @@ const {isAuthenticated}=useAuth();
       {isAuthenticated? <PrivateNavbar/>:<PublicNavbar/>}
      
         <Routes>
-
+<Route path="/checkout/:plan" element={<CheckoutForm/>}/>
           <Route path="/" element={<Home/>}/>
+          <Route path="/success" element={<PaymentSuccess/>}/>
           <Route path="/features" element={<HomeFeatures/>}/>
+          <Route path="/plans" element={<Plans/>}/>
           <Route path="/about" element={<AboutUs/>}/>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/free-plan" element={<FreePlanSignup/>}/>
          <Route path="/register" element={<Registration/>}/>
          <Route path="/login" element={<Login/>}/>
          <Route path="/generate-content" element={<AuthRoute>

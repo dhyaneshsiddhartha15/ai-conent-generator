@@ -5,5 +5,5 @@ const stripeRouter= express.Router();;
 
 stripeRouter.post("/pay",isAuthenticated, handlestripePayment);
 stripeRouter.post("/free-plan",isAuthenticated, handleFreeSubscription);
-stripeRouter.post("/verify/:paymentId",isAuthenticated, verifyPayment);
+stripeRouter.post("/verify/:paymentId", verifyPayment);
 module.exports = stripeRouter;

@@ -74,10 +74,10 @@ const Dashboard = () => {
           <h2 className="text-xl font-semibold mb-4">Payment & Plans</h2>
           <div>
             <p className="mb-4">Current Plan: {data?.user?.subscriptionPlan}</p> {data?.user?.subscriptionPlan==='Trial' && <p>Trial:1000 monthly request</p>}
-     {data?.user?.subscriptionPlan==='Free' && <p>Trial:1000 monthly request</p>}
- {data?.user?.subscriptionPlan==='Trial' && <p>Free:5 monthly request</p>}
- {data?.user?.subscriptionPlan==='Trial' && <p>Basic:50 monthly request</p>}
- {data?.user?.subscriptionPlan==='Trial' && <p>Premium:100 monthly request</p>}
+     {data?.user?.subscriptionPlan==='Trial' && <p>Trial:1000 monthly request</p>}
+ {data?.user?.subscriptionPlan==='Free' && <p>Free:5 monthly request</p>}
+ {data?.user?.subscriptionPlan==='Basic' && <p>Basic:50 monthly request</p>}
+ {data?.user?.subscriptionPlan==='Premium' && <p>Premium:100 monthly request</p>}
             <Link
               to="/plans"
               className=" py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-purple-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
@@ -91,7 +91,7 @@ const Dashboard = () => {
         <div className="mb-6 bg-white p-4 shadow rounded-lg">
           <h2 className="text-xl font-semibold mb-4">Trial Information</h2>
           <div>
-            <p className="mb-4">Trial Status:{data?.user?.trialActive?(<span className="text-green-500">Active</span>):(<span className="text-yellow-600">Inactive</span>)}</p>
+            <p className="mb-4">Trial Status:{data?.user?.trialActive?(<span className="text-green-500">Inctive</span>):(<span className="text-yellow-600">Active</span>)}</p>
             <p className="mb-4">
                     Expires on: {data?.user?.trialExpires ? (
                         new Date(data.user.trialExpires).toDateString()

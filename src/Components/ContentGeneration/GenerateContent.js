@@ -6,7 +6,6 @@ import { getUserProfileAPI } from "../APIS/usersAPI/users";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import StatusMessage from "../Alert/StatusMessage";
 import { generateContentAPI } from "../APIS/GenAI/genAI";
-
 const GenerateContent = () => {
   const [generatedContent, setGeneratedContent] = useState("");
   const {isError,isLoading,data,error}=useQuery({
@@ -69,7 +68,7 @@ const GenerateContent = () => {
         <div className="flex">
           <div className="mr-2 mb-2">
             <span className="text-sm font-semibold bg-green-200 px-4 py-2">
-              Credit :{data?.user?.apiRequest} /{""} {data?.user?.monthlyRequestCount}
+              Credit :{data?.user?.apiRequestCount} /{""} {data?.user?.monthlyRequestCount}
             </span>
           </div>
         </div>
@@ -157,7 +156,7 @@ const GenerateContent = () => {
             <h3 className="text-lg font-semibold text-gray-800 mb-2">
               Generated Content:
             </h3>
-            <p className="text-gray-600">{generatedContent}</p>
+            <p className="text-gray-600">{mutation.data}</p>
           </div>
         )}
       </div>
